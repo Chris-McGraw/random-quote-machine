@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  /* border: 2px solid red; */
+}
+
+body {
+  /* overflow: hidden; */
+  height: 100%;
+}
+
+#wrap {
+  width: 100%;
+  margin: auto;  
+  margin-bottom: 115px;
+}
+
+#main-container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  /* margin-top: 12.5%; */
+  margin-top: 5%;
+  background-color: #FEFCFF;
+  border: 2px solid black;
+  border-radius: 7.5px;
+  box-sizing: border-box;
+}
+
+#main-container:before {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 10.5%;
+  width: 0;
+  height: 0;
+  border: 30px solid;
+  border-color: black transparent transparent black;
+}
+
+#main-container:after {
+  content: ' ';
+  position: absolute;
+  top: 99%;
+  left: calc(10.5% + 2px);
+  width: 0;
+  height: 0;
+  border: 29px solid;
+  border-color: #FEFCFF transparent transparent #FEFCFF;
+}
+
+#quote {
+  width: 85%;
+  max-height: 45%; 
+  margin: auto;
+  margin-top: 7.5%;
+  margin-bottom: 2.5%; 
+  font-family: 'Archivo Narrow', sans-serif; 
+  font-size: 2em;
+  font-weight: bold;  
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+
+#quote-source {
+  width: 85%;
+  height: 7.5%;
+  margin: auto;
+  margin-bottom: 5.5%; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em; 
+  font-weight: bold; 
+  text-align: center;
+}
+
+#center-buttons {
+  width: 85%;
+  margin-left: 30%;
+  margin-bottom: 5.5%;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  top: 11px;
+  margin: auto;
+}
+
+i:hover {
+  opacity: 0.85; 
+}
+
+button {
+  display: inline-block; 
+  min-width: 20%;
+  margin: auto;
+  padding: 7.5px 2.5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.925em;
+  text-align: center;
+  border: none;
+  border-radius: 7.5px;
+  color: #FEFCFF;
+  outline: none;
+  cursor: pointer;
+} 
+
+button:hover {
+  opacity: 0.85;
+}
+
+.footer {
+  width: 85%;
+  height: 115px;
+  margin: auto;
+  margin-top: 3.5%;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  box-sizing: border-box;
+}
+
+.footer i {
+  color: #FEFCFF;
+}
+
+.footer-text-top {
+  margin: auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  color: #FEFCFF;
+}
+
+.footer-text-bottom {
+  margin: auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  color: #FEFCFF;
+}
+
+.social-media-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #quote-source {
+    font-size: 1.25em;
+  }
+}
